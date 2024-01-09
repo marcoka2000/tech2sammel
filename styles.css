@@ -14,11 +14,18 @@ body {
 
 #header {
     top: 0;
-    columns: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+}
+
+#titles {
 }
 
 footer {
     bottom: 0;
+    padding: 1rem 3rem;
 }
 
 iframe {
@@ -36,10 +43,10 @@ h2 {
     font-size: 1.25rem;
     font-weight: 400;
     margin: 0;
+    color: #333;
 }
 
 select {
-    float: right;
     margin-top: 1rem;
     appearance: none;
     border: 1px solid #aaa;
