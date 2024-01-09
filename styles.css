@@ -109,7 +109,7 @@ select {
 
 #content a:after {
     padding-left: 0.3rem;
-    content: url('/img/external-link.svg');
+    content: url('img/external-link.svg');
     width: 0.5rem;
     height:0.5rem;
     fill: #333;
