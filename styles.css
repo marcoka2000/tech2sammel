@@ -110,7 +110,8 @@ select {
 #content a:after {
     padding-left: 0.3rem;
     content: url('img/external-link.svg');
-    width: 0.5rem;
-    height:0.5rem;
-    fill: #333;
+}
+
+#content a.mail:after {
+    content: url(img/mail.svg);
 }
