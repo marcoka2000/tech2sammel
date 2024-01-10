@@ -26,11 +26,15 @@ const arrContentURLs = [
     "https://abf7e648-0da5-4c41-8944-7737c0f4e732-00-1eu7vl3jvdapx.riker.replit.dev"
 ]
 
+document.getElementById("space").innerHTML = "<iframe src='" + arrContentURLs[0] + "' frameborder='0'></iframe>";
+
+
 const selectElement = document.querySelector("#project-select");
 
 selectElement.addEventListener("change", (event) => {
-  console.log(event.target.value);
+    console.log(event.target.value);
 
-  document.getElementById("content").innerHTML = "<iframe src='" + arrContentURLs[event.target.value]+  "' frameborder='0'></iframe>";
-
+    if (event.target.value != "Trenner") {
+        document.getElementById("space").innerHTML = "<iframe src='" + arrContentURLs[event.target.value] + "' frameborder='0'></iframe>";
+    }
 });
