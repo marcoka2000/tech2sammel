@@ -2,12 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
 }
 
 #header,
 footer {
     padding: 2rem 3rem;
-    background-color: #fff;
+    background-color: #F6FEFB;
+    color: #08261B;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
 }
 
@@ -42,10 +44,18 @@ h1 {
     line-height: 3rem;
 }
 
+#header h1 {
+    padding-top: 0.1rem;
+}
+
 h2 {
     font-size: 1.25rem;
     font-weight: 400;
     color: #333;
+}
+
+#header h2 {
+    padding-top: 0.2rem;
 }
 
 h3 {
@@ -59,22 +69,21 @@ h4 {
 }
 
 select {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     appearance: none;
     border: 1px solid #aaa;
     outline: 0;
 
 
-    padding: 1rem 4rem 1rem 1rem;
+    padding: 1rem 4rem 0.8rem 1rem;
 
-    font-size: 1rem;
+    font-size: 0.8rem;
+    background-color: #f8f8f8;
     color: #333;
     border-radius: 4px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
     cursor: pointer;
-}
 
-select {
     background-image:
         linear-gradient(45deg, transparent 50%, gray 50%),
         linear-gradient(135deg, gray 50%, transparent 50%),
@@ -93,12 +102,17 @@ select {
 
 #content {
     max-width: 72ch;
-    padding: 2rem 3rem;
+    padding: 3.125rem 3rem;
     color: #222;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 2rem;
     text-wrap: balance;
+}
+
+#content p{
+    padding-top: 0.1rem;
+    padding-bottom: 0.25rem;
 }
 
 #content a {
@@ -114,4 +128,20 @@ select {
 
 #content a.mail:after {
     content: url(img/mail.svg);
+}
+
+
+/* Experiments with baseline grid */
+
+#div#baseline-grid {
+    position: fixed;
+    top: 0;
+
+    z-index: 9000;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #f00 0, transparent 1px);
+    background-repeat: repeat-y;
+    background-size: 100% 0.5rem;
 }
