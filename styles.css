@@ -29,7 +29,8 @@ footer {
 }
 
 #space {
-  padding: 3.125rem 4.5rem;
+  padding: 0 4.5rem;
+  max-width: 80rem;
 }
 
 /* Small only */
@@ -43,7 +44,7 @@ footer {
   }
 
   #space {
-    padding: 3.125rem 1.5rem;
+    padding: 0;
   }
 }
 
@@ -167,8 +168,9 @@ select option {
 }
 
 #content {
-  max-width: 72ch;
   text-wrap: balance;
+  max-width: 72ch;
+  padding-top: 3rem;
 }
 
 #content p {
