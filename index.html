@@ -10,6 +10,23 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
         </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var iframe = document.querySelector('iframe');
+
+                // Überwache das Laden des iframe-Inhalts
+                iframe.addEventListener('load', function() {
+                    // Hole alle Links innerhalb des iframes
+                    var iframeLinks = iframe.contentDocument.querySelectorAll('a');
+
+                    // Setze das target-Attribut auf '_blank' für alle Links im iframe
+                    iframeLinks.forEach(function(link) {
+                    link.setAttribute('target', '_blank');
+                    });
+                });
+             });
+  </script>
+
     </head>
 
     <body>
@@ -23,14 +40,15 @@
                 <select name="projects" id="project-select">
                     <option value="0">Über das Modul</option>
                     <option value="Trenner">______________________</option>
-                    <option value="1">Studierende 01</option>
+                    <option value="1">Amina Zerourou</option>
                     <option value="2">Studierende 02</option>
-                    <option value="3">Studierende 03</option>
+                    <option value="3">Amina Zerourou</option>
                     <option value="4">Studierende 04</option>
                     <option value="5">Maximilian Alexander Mustermann</option>
                     <option value="6">Studierende 06</option>
                     <option value="7">Studierende 07</option>
-                    <option value="8">Erika Angelika Hildegard Musterfrau</option>
+                    <option value="8">Erika Angelika Hildegard
+                        Musterfrau</option>
                     <option value="9">Studierende 09</option>
                     <option value="10">Studierende 10</option>
                     <option value="11">Studierende 11</option>
