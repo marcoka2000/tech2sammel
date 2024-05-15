@@ -39,7 +39,7 @@ function popups(feature, layer){
 				   + "<br><br><b>Todesdatum: </b>"
 					+ todesdatum
 					+ "<br><br>mehr Informationen: "
-					+ "<a href='"
+					+ "<a target='_blank' href='"
 					+ extLink
 					+ "'>Link zum ADFC</a>"
 
