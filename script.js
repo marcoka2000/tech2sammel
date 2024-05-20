@@ -16,6 +16,13 @@ const arrContentURLs = [
     "impressum.html"
 ]
 
+
+var header = document.createElement('div');
+header.setAttribute('id','header')
+document.body.appendChild(header);
+
+
+/*
 document.getElementById("space").innerHTML = "<iframe src='" + arrContentURLs[0] + "'></iframe>";
 
 
@@ -44,4 +51,5 @@ window.addEventListener('DOMContentLoaded', function() {
     for (var i = 0; i < links.length; i++) {
         links[i].target = "_blank";
     }
-})
+});
+*/
