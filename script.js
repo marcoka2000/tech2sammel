@@ -1,3 +1,17 @@
+function fetchContent(path) {
+    fetch(path)
+    .then(function (response) {
+        if (response.ok) {
+        return response.text();
+        }
+        throw response;
+    })
+    .then(function (text) {
+        //console.log(text);
+        document.getElementById("header").innerHTML = text;
+    });
+}
+
 const arrContentURLs = [
     "ueber.html",
     "/data/baeume/index.html",
@@ -19,26 +33,29 @@ const arrContentURLs = [
 
 var header = document.createElement('div');
 header.setAttribute('id','header')
-document.body.appendChild(header);
 
 
-/*
-document.getElementById("space").innerHTML = "<iframe src='" + arrContentURLs[0] + "'></iframe>";
+console.log(header)
+document.body.insertBefore(header, document.body.firstChild);
 
+fetchContent("header.html")
 
 const selectElement = document.querySelector("#project-select");
+console.log(selectElement)
 
 selectElement.addEventListener("change", (event) => {
     console.log(event.target.value);
 
     if (event.target.value != "Trenner") {
-        document.getElementById("space").innerHTML = "<iframe src='" + arrContentURLs[event.target.value] + "'></iframe>";
-
-        var links = document.getElementsByTagName("a");
-        console.log(links)
+        window.location.href = arrContentURLs[0]
     }
     
 });
+
+/*
+document.getElementById("space").innerHTML = "<iframe src='" + arrContentURLs[0] + "'></iframe>";
+
+
 
 var iframe = document.getElementsByTagName("iframe");
 console.log(iframe)
