@@ -31,14 +31,22 @@ const arrContentURLs = [
 ]
 
 
-var header = document.createElement('div');
-header.setAttribute('id','header')
+var button = document.createElement('a');
+button.setAttribute('href','../../index.html')
+button.setAttribute('style','font-family: sans-serif; font-weight: 400; background-color: #eee; color:#111; padding: 8px 16px; margin: 80px 8px; border-radius: 0px; border: 1px solid #6F6F6E; background: #ECECED; box-shadow: 4px 4px 0px 0px #6F6F6E; text-decoration: none;');
 
+// position: fixed; top: 8px; left: 8px; z-index: 9000;');
+button.innerHTML = '← Zurück zur Übersicht'
 
-console.log(header)
-document.body.insertBefore(header, document.body.firstChild);
+var spacer = document.createElement('div');
+spacer.setAttribute('class', 'spacer');
+spacer.setAttribute('style', 'height: 80px');
 
-fetchContent("header.html")
+console.log(button)
+// document.body.insertBefore(spacer, document.body.firstChild);
+document.body.insertBefore(button, document.body.firstChild);
+
+//fetchContent("header.html")
 
 const selectElement = document.querySelector("#project-select");
 console.log(selectElement)
