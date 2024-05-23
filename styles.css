@@ -7,82 +7,22 @@ body {
   color: hsl(215, 92%, 36%);
 }
 
-#header,
-footer {
-  background-color: #fff;
-  /* color: #08261b; */
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
-}
-
-#header {
-  position: sticky;
-  top: 0;
-}
-
-#header-wrap {
-  max-width: 120rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  
-  padding: 2rem 4.5rem;
-  align-items: flex-end;
-  gap: 1rem;
-}
-
-#space {
-  padding: 0 4.5rem;
-  max-width: 80rem;
-  height: 100vh;
-}
 
 /* Small only */
 @media screen and (max-width: 960px) {
-  #header-wrap {
-    padding: 35px 24px 16px 24px;
-  }
-  
-  select {
-    width: 100%;
-  }
-
   #space {
     padding: 0;
-  }
-
-  #content {
   }
 }
 
 /* Medium only */
 @media screen and (min-width: 576px) and (max-width: 1024px) {
-  #header {
 
-  }
-  
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
 }
-
-#titles {
-}
-
-footer {
-  bottom: 0;
-  padding: 1rem 3rem;
-  width: 100vw;
-}
-
-iframe {
-  width: 100%;
-  height: calc(100% + 400px);
-  overflow: hidden;
-  border: none;
-}
-
-
 h1,
 h2,
 h3,
@@ -115,7 +55,7 @@ h2 {
 
 #header h2 {
   align-self: stretch;
-  color: var(--corporate-design-shades-grau-80, #565656);
+  color: #565656;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -179,6 +119,17 @@ h4 {
 
 #content ul{
   margin: 32px 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+#content ul li{
+  margin: 24px 0;
+}
+
+#content ul li:after{
+  padding-left: 0.3rem;
+  content: '→';
 }
 
 /* Experiments with baseline grid */
