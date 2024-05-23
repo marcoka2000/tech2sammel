@@ -179,6 +179,17 @@ h4 {
 
 #content ul{
   margin: 32px 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+#content ul li{
+  margin: 24px 0;
+}
+
+#content ul li:after{
+  padding-left: 0.3rem;
+  content: '→';
 }
 
 /* Experiments with baseline grid */
