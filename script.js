@@ -14,4 +14,5 @@ spacer.setAttribute('style', 'max-width: 1200px; height: 80px; position: sticky;
 document.body.insertBefore(button, document.body.firstChild);
 document.body.insertBefore(spacer, document.body.firstChild);
 
-document.getElementById('card').setAttribute('style', 'margin-top: 0;')
+document.getElementById('card').setAttribute('style', 'margin-top: 0; margin-bottom: 0;');
+document.body.setAttribute('style', 'padding-bottom: 4rem;')
