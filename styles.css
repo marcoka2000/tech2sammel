@@ -2,13 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
+  background: hsl(215, 92%, 99%);
+  color: hsl(215, 92%, 36%);
 }
 
 #header,
 footer {
   background-color: #fff;
-  color: #08261b;
+  /* color: #08261b; */
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
 }
 
@@ -96,7 +98,7 @@ h1 {
 
 #header h1 {
   align-self: stretch;
-  color: var(--corporate-design-shades-grau-90, #3b3b3a);
+  /* color: #3b3b3a; */
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -108,7 +110,7 @@ h1 {
 h2 {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #333;
+  /* color: #333; */
 }
 
 #header h2 {
@@ -123,7 +125,7 @@ h2 {
 }
 
 h3 {
-  color: #3b3b3a;
+  /* color: #3b3b3a; */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -132,45 +134,12 @@ h3 {
 }
 
 h4 {
-  color: #3b3b3a;
+  /* color: #3b3b3a; */
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 133.333% */
-}
-
-select {
-  height: 2rem;
-  appearance: none;
-  display: flex;
-  padding: 8px 40px 0 8px;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-
-  border: 1px solid #565656;
-  outline: 0;
-
-  background-color: #f8f8f8;
-  color: #333;
-  cursor: pointer;
-
-  background-image: url("img/chevron-down.svg");
-  background-position-x: right;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-select option {
-  flex: 1 0 0;
-  color: #565656;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 #content {
@@ -182,7 +151,7 @@ select option {
 }
 
 #content p {
-  color: #565656;
+  color:  #565656;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -193,16 +162,23 @@ select option {
 #content a {
   text-decoration: none;
   font-weight: 700;
-  color: #333;
+  /* color: #333; */
+  color: hsl(215, 96%, 32%);
+  white-space: nowrap;
 }
 
-#content a:after {
+#content a.external:after {
   padding-left: 0.3rem;
   content: url("img/external-link.svg");
 }
 
 #content a.mail:after {
+  padding-left: 0.3rem;
   content: url(img/mail.svg);
+}
+
+#content ul{
+  margin: 32px 0;
 }
 
 /* Experiments with baseline grid */
