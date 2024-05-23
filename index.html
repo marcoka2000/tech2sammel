@@ -10,56 +10,60 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
         </style>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var iframe = document.querySelector('iframe');
-
-                // Überwache das Laden des iframe-Inhalts
-                iframe.addEventListener('load', function() {
-                    // Hole alle Links innerhalb des iframes
-                    var iframeLinks = iframe.contentDocument.querySelectorAll('a');
-
-                    // Setze das target-Attribut auf '_blank' für alle Links im iframe
-                    iframeLinks.forEach(function(link) {
-                    link.setAttribute('target', '_blank');
-                    });
-                });
-             });
-  </script>
-
     </head>
-
+    
     <body>
         <div id="baseline-grid"></div>
-        <div id="header">
-            <div id="header-wrap">
-                <div id="titles">
-                    <h1>So viel Berlin</h1>
-                    <h2>Kartenvisualisierungen mit Open&nbsp;Data</h2>
-                </div>
-                <select name="projects" id="project-select">
-                    <option value="0">Über das Modul</option>
-                    <option value="Trenner">______________________</option>
-                    <option value="6">Apothekendichte</option>
-                    <option value="1">Bäume in Berlin</option>
-                    <option value="8">Broken Lifts</option>
-                    <option value="5">Coronafallzahlen</option>
-                    <option value="4">Getötete Radfahrende 2023</option>
-                    <option value="7">Gewalt gegen Frauen</option>
-                    <option value="12">Hitzehotspots</option>
-                    <option value="9">Kriminalitsanalyse</option>
-                    <option value="10">Sommerspaß in Berlin</option>
-                    <!-- <option value="11">Psychosoziale Hilfsangebote</option> -->
-                    <option value="3">Psychosoziale Hilfsangebote</option>
-                    <option value="2">Wo lohnen sich noch Kinder?</option>
-                    <option value="Trenner">______________________</option>
-                    <option value="14">Impressum</option>
-                </select>
-            </div>
+        <!-- <div id="space"></div> -->
+        <div id="content">
+            <h3>Technologien 2 - Datenvisualisierung</h3>
+            <h4>Wintersemester 2023/2024</h4>
+            <p>
+                Hier werden die gesammmelten Ergebnisse des Kurses
+                Datenvisualisierung präsentiert. Der Kurs findet im Rahmen des
+                Studienganges <a class="external"
+                    href="https://kd.htw-berlin.de">Kommunikationsdesign</a> an
+                der HTW&nbsp;Berlin statt. Ziel dieses Wahlpflichtmoduls
+                "Technologien&nbsp;2"
+                ist es digitalen Medien zu analysieren und zu verstehen, sowie
+                konzeptionell weiterzuentwickeln.
+            </p>
+            <p>
+                In der fachlichen Vertiefung Datenvisualisierung haben wir uns
+                den mit den <a class="external" href="https://daten.berlin.de">Open&nbsp;Daten&nbsp;Portalen</a> der Stadt Berlin beschäftigt und mittels
+                Geoinformationssystemen (GIS) aus den <a class="external" href="https://www.berlin.de/sen/sbw/stadtdaten/geoportal/">Geoportalen</a>
+                versucht Information daraus user:innenfreundlich in kleinen
+                Webanwendungen zu kartieren.
+            </p>
 
+            <p>
+                Der Kurs umfasst fünf Unterrichtstage über einen Zeitraum von sechs Wochen, dabei lernen die Studierenden konzeptionelle Methodiken, sowie Grundlagen zum Umgang mit offenen Daten, sowie die Visualisierung mittels HTML, CSS und Javascript (VanillaJS und <a class="external" href="https://leafletjs.com">Leaflet</a>).<br>
+            </p>
+                <ul>
+                    <li><a href="data/apothekendichte/index.html">Apothekendichte</a></li>
+                    <li><a href="data/baeume/index.html">Bäume in Berlin</a></li>
+                    <li><a href="data/brokenlifts/index.html">Broken Lifts</a></li>
+                    <li><a href="data/coronafallzahlen/index.html">Coronafallzahlen</a></li>
+                    <li><a href="data/radfahrende/index.html">Getötete Radfahrende
+                            2023</a></li>
+                    <li><a href="data/gewalt/index.html">Gewalt gegen Frauen</a></li>
+                    <li><a href="data/hitzehotspots/index.html">Hitzehotspots</a></li>
+                    <li><a
+                            href="data/kriminalitsanalyse/index.html">Kriminalitätsanalyse</a></li>
+                    <li><a href="data/sommerspass/index.html">Sommerspaß in Berlin</a></li>
+                    <li><a href="data/psychosozial/index.html">Psychosoziale
+                            Hilfsangebote</a></li>
+                    <li><a href="data/kinder/index.html">Wo lohnen sich noch
+                            Kinder?</a></li>
+        
+                </ul>
+            <p>
+                Bitte beachten Sie, dass es sich um einen Einsteigerkurs handelt, sollten sie ihre Urheberrechte o.ä. verletzt sehen, bitte ich Sie sich via <a href="mailto:kadem@htw-berlin.de?cc=accounts@marcoka.de&subject=[tech2sammel]%20Lizenzrechtliche%20Bedenken" class="mail">Email</a> an den Lehrenden Marco Kade zu wenden.
+            </p>
+
+    
         </div>
-        <div id="space"></div>
-        <script src="script.js"></script>
     </body>
+    <!-- <script src="script.js"></script> -->
 
 </html>
